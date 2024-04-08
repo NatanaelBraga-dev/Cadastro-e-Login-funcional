@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.box-degrade{
+    height: 100vh;
+    width: 100%;
+    padding: 300px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(-45deg, #0A2647,#144272,#205295,#2C74B3);
+    background-size: 500% 100%;
+    animation: degrade-animado 5s infinite alternate;
+}
+
+@keyframes degrade-animado {
+    0%{
+        background-position: 0% ;
+    }
+    100%{
+        background-position: 100%;
+    }
+}
+
+.container-formulario{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: white;
+    width: 315px;
+    height: 340px;
+    border-radius: 12px;
+}
+
+#formulario{
+    padding-top: 22px;
+    color: black;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: block;
+    text-align: center;
+}
+
+.text{
+    font-family: calibri;
+    padding-bottom: 40px;
+    font-weight: bold;
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.container-inputs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    padding-right: 10px;
+}
+
+.input{
+    border-color: gray;
+    font-size: 14px;
+    border: none;
+    border-bottom: 1px solid gray;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 8px;
+    width: 250px;
+    transition: 1s;
+    background-color: transparent;
+}
+
+
+.input-buttom{
+    display: flex;
+    padding-top: 20px;
+}
+
+#botao-submit{
+    letter-spacing: 1px;
+    display: flex;
+    border: 2px solid black;
+    margin-top: 12px;
+    font-family: calibri;
+    font-size: 23px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: white;
+    transition: 1s;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+#botao-submit:hover{
+    color: white;
+    background-color: #2C74B3;
+}
+
+#text-nao-possui-conta{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
